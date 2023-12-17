@@ -42,9 +42,9 @@ namespace PresentBuilder.Gui
             {
                 innerTypeBox.Text = "Выберите тип печенья";
                 innerTypeBox.ItemsSource = new string[] {
-                    "шоколадная",
+                    "шоколадное",
                      "с орехами",
-                     "фруктовая",
+                     "фруктовое",
                 };
             }
         }

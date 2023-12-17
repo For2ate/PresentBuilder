@@ -22,6 +22,25 @@ namespace PresentBuilder.DataLayer.DataClasses
             presentList.Add(obj);
         }
 
+        public Sweets FindByString(string objString)
+        {
+            Sweets result = null;
+            foreach (var item in presentList)
+            {
+                if (((item is Sweet) && (item as Sweet).ToString() == objString) || ((item is Cookie) && (item as Cookie).ToString() == objString))
+                {
+                    result = item;
+                    break;
+                }
+            }
+            return result;
+        }
+
+        public void Remove(Sweets obj)
+        {
+            presentList.Remove(obj);
+        }
+
         public int FindBySugar(int sugarPercent)
         {
             int position = -1;
