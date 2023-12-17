@@ -25,11 +25,11 @@ namespace PresentBuilder.DataLayer.DataClasses
                 switch (type)
                 {
                     case CookieType.Chokolate:
-                        return "шоколадная";
+                        return "шоколадное";
                     case CookieType.Walnut:
                         return "с орехами";
                     case CookieType.Fruity:
-                        return "фруктовая";
+                        return "фруктовое";
                     default:
                         return "None";
                 }

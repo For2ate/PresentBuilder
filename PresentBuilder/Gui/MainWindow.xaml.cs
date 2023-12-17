@@ -47,5 +47,9 @@ namespace PresentBuilder
             }
         }
 
+        private void deleteSweetsButton_Click(object sender, RoutedEventArgs e)
+        {
+            Sourse.DeleteElement();
+        }
     }
 }

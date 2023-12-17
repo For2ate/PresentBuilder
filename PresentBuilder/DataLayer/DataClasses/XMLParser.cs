@@ -24,11 +24,39 @@ namespace PresentBuilder.DataLayer.DataClasses
         {
             try
             {
-                XDocument xmlDoc = new XDocument(nameFile);
+                XDocument xmlDoc = XDocument.Load(nameFile);
+                XElement? root = xmlDoc.Element("Sweets");
                 if (obj is Sweet)
                 {
-                    xmlDoc.Root.Add((obj as Sweet).CreateXml());
+                    root.Add((obj as Sweet).CreateXml());
+                } else
+                {
+                    root.Add((obj as Cookie).CreateXml());
                 }
+                xmlDoc.Save(nameFile);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        public void Remove(Sweets obj)
+        {
+            try
+            {
+                XDocument xmlDoc = XDocument.Load(nameFile);
+                XElement? root = xmlDoc.Element("Sweets");
+                if (obj is Sweet)
+                {
+                    XElement xElement = (obj as Sweet).CreateXml();
+                    root.Elements("Sweet").FirstOrDefault(p => p.Element("name").Value == xElement.Element("name").Value).Remove();
+                } else
+                {
+                    XElement xElement = (obj as Cookie).CreateXml();
+                    root.Elements("Cookie").FirstOrDefault(p => p.Element("name").Value == xElement.Element("name").Value).Remove();
+                }
+                xmlDoc.Save(nameFile);
             }
             catch (Exception ex)
             {
@@ -38,22 +66,20 @@ namespace PresentBuilder.DataLayer.DataClasses
 
         public List<Sweets> GetList() {
             List<Sweets> result = new List<Sweets>();
-             try{
-                XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.LoadXml(nameFile);
-                foreach (XmlNode ths in xmlDoc.DocumentElement.ChildNodes)
+            try{
+                XmlDocument xmlDocument = new XmlDocument();
+                xmlDocument.Load(nameFile); 
+                foreach (XmlNode node in xmlDocument.DocumentElement.ChildNodes)
                 {
-                    int weight = Convert.ToInt32(ths.ChildNodes[0].InnerText);
-                    int sugarPercent = Convert.ToInt32(ths.ChildNodes[1].InnerText);
-                    string name = ths.ChildNodes[2].InnerText;
-                    string type = ths.ChildNodes[3].InnerText;
-                    if (ths.Name == "Cookie")
+                    string name = node.ChildNodes[0].InnerText;
+                    int weight = Convert.ToInt32(node.ChildNodes[1].InnerText);
+                    int sugarPercent = Convert.ToInt32(node.ChildNodes[2].InnerText);
+                    string type = node.ChildNodes[3].InnerText;
+                    if (node.Name == "Sweet")
                     {
+                        result.Add(new Sweet(weight,sugarPercent, name, type));
+                    } else {
                         result.Add(new Cookie(weight, sugarPercent, name, type));
-                    }
-                    else
-                    {
-                        result.Add(new Sweet(weight, sugarPercent, name, type));
                     }
                 }
             } catch (Exception ex)

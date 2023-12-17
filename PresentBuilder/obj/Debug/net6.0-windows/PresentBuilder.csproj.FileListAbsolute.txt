@@ -22,3 +22,27 @@ C:\Users\Sabryn Kh\source\repos\PresentBuilder\PresentBuilder\obj\Debug\net6.0-w
 C:\Users\Sabryn Kh\source\repos\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\Gui\App.baml
 C:\Users\Sabryn Kh\source\repos\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\Gui\GenericSweetWindow.g.cs
 C:\Users\Sabryn Kh\source\repos\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\Gui\GenericSweetWindow.baml
+E:\Projects\PresentBuilder\PresentBuilder\bin\Debug\net6.0-windows\PresentBuilder.exe
+E:\Projects\PresentBuilder\PresentBuilder\bin\Debug\net6.0-windows\PresentBuilder.deps.json
+E:\Projects\PresentBuilder\PresentBuilder\bin\Debug\net6.0-windows\PresentBuilder.runtimeconfig.json
+E:\Projects\PresentBuilder\PresentBuilder\bin\Debug\net6.0-windows\PresentBuilder.dll
+E:\Projects\PresentBuilder\PresentBuilder\bin\Debug\net6.0-windows\PresentBuilder.pdb
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\Gui\App.g.cs
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\Gui\GenericSweetWindow.g.cs
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\Gui\MainWindow.g.cs
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\PresentBuilder_MarkupCompile.cache
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\PresentBuilder_MarkupCompile.lref
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\Gui\App.baml
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\Gui\GenericSweetWindow.baml
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\Gui\MainWindow.baml
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\PresentBuilder.g.resources
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\PresentBuilder.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\PresentBuilder.AssemblyInfoInputs.cache
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\PresentBuilder.AssemblyInfo.cs
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\PresentBuilder.csproj.CoreCompileInputs.cache
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\PresentBuilder.sourcelink.json
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\PresentBuilder.dll
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\refint\PresentBuilder.dll
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\PresentBuilder.pdb
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\PresentBuilder.genruntimeconfig.cache
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\ref\PresentBuilder.dll

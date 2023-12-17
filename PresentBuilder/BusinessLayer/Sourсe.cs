@@ -7,6 +7,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace PresentBuilder
 {
@@ -15,7 +16,7 @@ namespace PresentBuilder
 
         private static Present present;
         private static MainWindow mainWindow = new MainWindow();
-        private static XMLParser xmlParser = new XMLParser(Path.GetFullPath("C:\\Users\\Sabryn Kh\\source\\repos\\PresentBuilder\\PresentBuilder\\DataLayer\\Data\\SweetsBase.xml"));
+        private static XMLParser xmlParser = new XMLParser(Path.GetFullPath("E:\\Projects\\PresentBuilder\\PresentBuilder\\DataLayer\\Data\\SweetsBase.xml"));
 
         [STAThread()]
         static void Main()
@@ -42,6 +43,22 @@ namespace PresentBuilder
             mainWindow.AddInWindow(obj);
         }
 
+        public static void DeleteElement()
+        {
+            try
+            {
+                foreach (string item in mainWindow.presentListView.SelectedItems)
+                {
+                    mainWindow.presentListView.Items.Remove(item);
+                    Sweets obj = present.FindByString(item);
+                    present.Remove(obj);
+                    xmlParser.Remove(obj);
+                }
+            } catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
         
 
 

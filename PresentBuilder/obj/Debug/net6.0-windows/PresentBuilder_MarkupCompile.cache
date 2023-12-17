@@ -4,7 +4,7 @@
 winexe
 C#
 .cs
-C:\Users\Sabryn Kh\source\repos\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\
+E:\Projects\PresentBuilder\PresentBuilder\obj\Debug\net6.0-windows\
 PresentBuilder
 none
 false
@@ -13,7 +13,7 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 3-1952247948
 
 11-295598460
-1941709816142
+194419526639
 Gui\App.xaml;Gui\GenericSweetWindow.xaml;Gui\MainWindow.xaml;
 
 False

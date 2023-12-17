@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Sweets>
-	
+  <Sweet>
+    <name>Сабрин</name>
+    <weight>60</weight>
+    <sugarPercent>100</sugarPercent>
+    <type>желейная</type>
+  </Sweet>
 </Sweets>
