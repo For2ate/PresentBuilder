@@ -43,6 +43,16 @@ namespace PresentBuilder
             mainWindow.AddInWindow(obj);
         }
 
+        public static void SortList(int type)
+        {
+            present.Sort(type);
+            mainWindow.presentListView.Items.Clear();
+            foreach (var obj in present.GetPresentList())
+            {
+                mainWindow.AddInWindow(obj);
+            }
+        }
+
         public static void DeleteElement()
         {
             try

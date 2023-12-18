@@ -6,4 +6,22 @@
     <sugarPercent>100</sugarPercent>
     <type>желейная</type>
   </Sweet>
+  <Cookie>
+    <name>Курьян</name>
+    <weight>100</weight>
+    <sugarPercent>0</sugarPercent>
+    <type>шоколадное</type>
+  </Cookie>
+  <Cookie>
+    <name>Комунарка</name>
+    <weight>100</weight>
+    <sugarPercent>17</sugarPercent>
+    <type>фруктовое</type>
+  </Cookie>
+  <Sweet>
+    <name>Денисник</name>
+    <weight>90</weight>
+    <sugarPercent>14</sugarPercent>
+    <type>фруктовая</type>
+  </Sweet>
 </Sweets>

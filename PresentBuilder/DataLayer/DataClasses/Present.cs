@@ -58,6 +58,23 @@ namespace PresentBuilder.DataLayer.DataClasses
             return this.presentList;
         }
 
+        public void Sort(int type)
+        {
+            switch(type)
+            {
+                case 1:
+                    presentList.Sort((x, y) => x.Name.CompareTo(y.Name)); 
+                    break;
+                case 2:
+                    presentList.Sort((x, y) => x.Weight.CompareTo(y.Weight));
+                    break;
+                case 3:
+                    presentList.Sort((x,y) => x.SugarPercent.CompareTo(y.SugarPercent));
+                    break;
+                default: 
+                    break;
+            }
+        }
 
     }
 }
