@@ -51,5 +51,21 @@ namespace PresentBuilder
         {
             Sourse.DeleteElement();
         }
+
+        private void sorting_Click(object sender, RoutedEventArgs e)
+        {
+            if ((sender as Button).Name == "sortingByName")
+            {
+                Sourse.SortList(1);
+            }
+            if ((sender as Button).Name == "sortingByWeight")
+            {
+                Sourse.SortList(2);
+            }
+            if ((sender as Button).Name == "sortingBySugarPercent")
+            {
+                Sourse.SortList(3);
+            }
+        }
     }
 }
